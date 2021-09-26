@@ -1,0 +1,25 @@
+var alunoAcademia = {
+    id: 1,
+    aluno: "Luana Morgana" ,
+    peso: 40.00 ,
+    altura: 1.68
+};
+
+var nomeDoAluno = alunoAcademia.aluno;
+var pesoDoAluno = alunoAcademia.peso;
+var alturaDoAluno = alunoAcademia.altura;
+
+var IMC_aluno = pesoDoAluno / (alturaDoAluno * alturaDoAluno);
+
+if (IMC_aluno < 18.5) {
+
+    console.log("O aluno está abaixo do peso!");
+
+} else if (IMC_aluno >= 18.5 && IMC_aluno <= 24.9) {
+
+    console.log ("O aluno está com o peso normal!");
+
+} else {
+  
+    console.log ("Aluno acima do peso!");
+}
