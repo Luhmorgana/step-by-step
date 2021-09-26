@@ -1,0 +1,21 @@
+var horarioDeAulas = [
+    { aulas: "Não tem aula",                 horario: "Dia inteiro" },     
+    { aulas: "Materiais, PQ1 e ACP",         horario: "15h-20h" },    
+    { aulas: "PQ2 e OP3",                    horario: "15h-19h" },   
+    { aulas: "Materiais",                    horario: "15h-19h" } ,  
+    { aulas: "PQ2, PQ1",                     horario: "15h-19h" } , 
+    { aulas: "LEQ 2 ",                       horario: "14h-16h" } , 
+    { aulas: "Não tem aula",                 horario: "Dia inteiro" }  
+];
+
+var data_atual = new Date();
+
+var dia_semana = data_atual.getDay();  //Gera um numero de 0 a 6 correspondente ao dia da semana
+
+var horario_do_dia = horarioDeAulas[dia_semana];
+
+var aulas_do_dia = horario_do_dia.aula;
+var horario_aula = horario_do_dia.horario;
+
+
+console.log("Hoje é dia de " + aulas_do_dia  + " às " + horario_aula);
