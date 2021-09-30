@@ -14,7 +14,7 @@ var dia_semana = data_atual.getDay();  //Gera um numero de 0 a 6 correspondente 
 
 var horario_do_dia = horarioDeAulas[dia_semana];
 
-var aulas_do_dia = horario_do_dia.aula;
+var aulas_do_dia = horario_do_dia.aulas;
 var horario_aula = horario_do_dia.horario;
 
 
